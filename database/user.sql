@@ -6,9 +6,14 @@
 -- Généré le: Jeu 12 Mai 2016 à 16:02
 -- Version du serveur: 5.5.49-0ubuntu0.14.04.1-log
 -- Version de PHP: 5.5.9-1ubuntu4.16
+CREATE DATABASE challengeAuth CHARACTER SET 'utf8';
+
+USE challengeAuth;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -35,6 +40,9 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+INSERT INTO `user` (`username`,`password`)
+VALUES ('abc','123'),('def', '456');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

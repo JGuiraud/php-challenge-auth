@@ -3,3 +3,8 @@ label, select, input{
   display: inline-block;
   margin: 5px 0;
 }
+
+.sep {
+  height: 4px;
+  background: black;
+}
